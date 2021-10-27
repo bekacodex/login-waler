@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+:root
+{
+    --color-white : #fff;
+    --color-dark : #111;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+body
+{
+    font-family: 'Poppins', sans-serif ;
+    font-weight: 300;
+    height: 100vh;
+    background-image: url(aaaaaa.jpg);
+    background-size: cover;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100rem;
+    flex-wrap: wrap;
+}
+.card
+{
+    width: 20rem;
+    padding: 4rem 3rem;
+    padding-top: 4rem;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+}
+.card-user-pic
+{
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--color-white);
+    box-shadow: 0 0 1rem rgba(0, 0, 0,.1);
+}
+.card-user-pic img
+{
+
+    width: 121%;
+    height: 151%;
+    object-fit: cover;
+}
+
+.heading
+{
+    margin-bottom: 1.5rem;
+}
+.heading--sup
+{
+    display: block;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+.heading--sub
+{
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.btns
+{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.btn
+{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-white);
+    color: #000;
+    padding: 8px 24px;
+    font-size: .9rem;
+    border: 1px solid var(--color-white);
+    border-radius: 10rem;
+}
+.btn--follow
+{
+    background-color:var(--color-white) ;
+    color: --color-dark  ;
+}
+.info
+{
+    display: flex;
+    width: 100%;
+}
+.info p
+{
+    text-align: center;
+    flex: 1;
+}
+.info span
+{
+    display: block;
+
+}
+.info p:not(:last-child)
+{
+    border-right: 1px solid rgba(225, 225, 225,.6);
+}
+.info p span:last-child
+{
+    font-weight: 600;
+}
